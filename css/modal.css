@@ -80,7 +80,7 @@
 @media screen and (max-width: 480px) {
   .fondomodal {
     width: 100% !important;
-    padding: 60px 0px;
+    padding: 200px 0px;
   }
 
   .cerrarmodal {
