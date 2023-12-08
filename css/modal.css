@@ -1,4 +1,5 @@
 .fondomodal {
+  display: none;
   padding: 150px 10px;
   position: fixed;
   z-index: 10;
