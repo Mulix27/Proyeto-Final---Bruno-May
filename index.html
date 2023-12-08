@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poket</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/movil.css" />
+  <link rel="stylesheet" href="css/modal.css">
+  <link href="css/lightbox.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7003421962.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script>
+    $(function () {
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $(".events").append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $(".events").append("<li>after event fired.</li>");
+        },
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-movil">
+      <figure class="logo">
+        <img src="img/logo.png" alt="" />
+      </figure>
+    </div>
+
+    <div class="navbar ancho">
+      <figure class="logo">
+        <img src="img/logo.png" alt="" />
+      </figure>
+      <p class="txt-menu">MENU</p>
+      <nav class="menu">
+        <div id="menu" class="burger">
+          <i class="fa fa-solid fa-bars"></i>
+        </div>
+        <ul id="contenedormenu" class="sections">
+          <div class="fondo">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#pages">Pages</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a id="glass-magni" href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000"></i></a>
+            </li>
+            <li>
+              <a id="btn-header" class="btn-header" href="#">Get in touch</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="callbacks_container">
+    <ul class="rslides" id="slider4">
+      <li>
+        <img src="img/slide1.jpg" alt="" />
+        <div class="caption">
+          <div>
+            <figure class="slide-icons">
+              <img src="img/slider-icon-img.png" alt="" />
+            </figure>
+          </div>
+          <br />
+          <h1>Psychology Specialist Dr. Jakiya Smith</h1>
+          <p>
+            There are many variations of passages lorem Ipsum available, but
+            the majority have suffered alteration.
+          </p>
+          <div class="btn-slid">
+            <a href="#">OUR SOLUTION</a>
+            <a id="btn-sa" href="#" class="button">APPOINMENT</a>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <img src="img/slide2.jpg" alt="" />
+        <div class="caption">
+          <div>
+            <figure class="slide-icons">
+              <img src="img/slider-icon-img.png" alt="" />
+            </figure>
+          </div>
+          <br />
+          <h1>Psychology Specialist Dr. Jakiya Smith</h1>
+          <p>
+            There are many variations of passages lorem Ipsum available, but
+            the majority have suffered alteration.
+          </p>
+          <div class="btn-slid">
+            <a href="#">OUR SOLUTION</a>
+            <a id="btn-sa" href="#" class="button">APPOINMENT</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="modal" class="fondomodal">
+    <div class="contenidomodal">
+      <div id="cerrarbtn" class="alineacion_cerrar">
+        <i class="cerrarmodal fas fa-times"> </i>
+      </div>
+      <article class="promociones">
+        <figure class="promo-logo">
+          <img src="img/logo.png" alt="">
+        </figure>
+        <figure>
+          <img src="img/light5.jpg" alt="">
+        </figure>
+        <p>We are the psychology firm you need. Come and connect with us to empower the growth of your mental
+          well-being. Our dedicated team is here to support you on your journey towards a healthier and happier life.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-our">
+    <div class="our-psy ancho">
+      <div class="div-dr">
+        <h4>Psychology Specialist</h4>
+        <h1>Dr. Jakiya <br> Smith</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut
+          labore et
+          dolore magna nim ad <br> minim veniam, quis nostrud</p> <br>
+        <a href="">OUR ABOUT US</a>
+      </div>
+      <div class="div-img">
+        <figure>
+          <img src="img/team3.jpg" alt="">
+        </figure>
+      </div>
+      <div class="div-info">
+        <div class="txt-info">
+          <h2>Our Position</h2>
+          <p>Lorem ipsum dolor sit amet, onsectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut
+            labore. </p>
+        </div>
+        <div class="txt-info">
+          <h2>Our Mission</h2>
+          <p>Lorem ipsum dolor sit amet, onsectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut
+            labore. </p>
+        </div>
+        <div class="txt-info">
+          <h2>Our Vission</h2>
+          <p>Lorem ipsum dolor sit amet, onsectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut
+            labore. </p>
+        </div> <br>
+        <div class="pys-icons">
+          <a><i class="fa-brands fa-facebook"></i></a>
+          <a><i class="fa-brands fa-twitter"></i></a>
+          <a><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-card">
+    <div class="cards ancho">
+      <article class="card">
+        <br>
+        <a href=""><i class="fa-solid fa-hand-holding-heart"></i></a>
+        <h2>Relationship Issues</h2>
+        <p>Lorem ipsum dolor sit amet, nsectet adipisicing elit, sed do eiusmod por incididunt ut labore .</p>
+        <br>
+        <a id="appoin" href="#">+ APPOINTMENT</a>
+      </article>
+
+      <article class="card">
+        <br>
+        <a href=""><i class="fa-solid fa-people-arrows"></i></a>
+        <h2>Relationship Issues</h2>
+        <p>Lorem ipsum dolor sit amet, nsectet adipisicing elit, sed do eiusmod por incididunt ut labore .</p>
+        <br>
+        <a id="appoin" href="#">+ APPOINTMENT</a>
+      </article>
+
+      <article class="card">
+        <br>
+        <a href=""><i class="fa-solid fa-brain"></i></a>
+        <h2>Relationship Issues</h2>
+        <p>Lorem ipsum dolor sit amet, nsectet adipisicing elit, sed do eiusmod por incididunt ut labore .</p>
+        <br>
+        <a id="appoin" href="#">+ APPOINTMENT</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section-faqs">
+    <div class="faqs ancho">
+      <div class="img-faqs">
+        <figure>
+          <img src="img/faq-img.jpg" alt="" />
+        </figure>
+      </div>
+      <div class="questions">
+        <h4>Our Faqs</h4>
+        <h1>Our Clinic Expert Psychologist from New York.</h1>
+        <div class="part mid">
+          <div class="acor" id="tit1">
+            <h2>01. What is off page seo link building?</h2>
+            <a><i id="ico1" class="fa-solid fa-plus-square"></i></a>
+          </div>
+          <div class="info" id="inf">
+            <p>
+              A wonderful serenity has taken possession of my entire soul,
+              these sweet mornings of spring which I enjoy with my whole eart.
+              I am lone, and feel the charm
+            </p>
+          </div>
+        </div>
+        <div class="part mid">
+          <div class="acor" id="tit2">
+            <h2>02. High Quality Data Security</h2>
+            <a><i id="ico2" class="fa-solid fa-plus-square"></i></a>
+          </div>
+          <div class="info" id="inf2">
+            <p>
+              A wonderful serenity has taken possession of my entire soul,
+              these sweet mornings of spring which I enjoy with my whole eart.
+              I am lone, and feel the charm
+            </p>
+          </div>
+        </div>
+        <div class="part mid">
+          <div class="acor" id="tit3">
+            <h2>03. How investing in dependend incer</h2>
+            <a><i id="ico3" class="fa-solid fa-plus-square"></i></a>
+          </div>
+          <div class="info" id="inf3">
+            <p>
+              A wonderful serenity has taken possession of my entire soul,
+              these sweet mornings of spring which I enjoy with my whole eart.
+              I am lone, and feel the charm
+            </p>
+          </div>
+        </div>
+        <div class="part mid">
+          <div class="acor" id="tit4">
+            <h2>04. Asing to Business Security</h2>
+            <a><i id="ico4" class="fa-solid fa-plus-square"></i></a>
+          </div>
+          <div class="info" id="inf4">
+            <p>
+              A wonderful serenity has taken possession of my entire soul,
+              these sweet mornings of spring which I enjoy with my whole eart.
+              I am lone, and feel the charm
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-psy">
+    <div class="psy ancho">
+      <div class="psy-figure">
+        <figure>
+          <img src="img/about.jpg" alt="" />
+          <div class="div-clip">
+            <div class="profile-clip">
+              <figure id="profile">
+                <img src="img/testi1.jpg" alt="">
+              </figure>
+              <div class="txt-pro">
+                <h2>Dr. Jakiya Smith</h2>
+                <p>CEO - Pliosist</p>
+              </div>
+            </div>
+            <p>Labore et dolore magna aliqua. Ut enim <br> ad minim veniam, quis nostrud rcitation <br> ullamco laboris
+              nisi. </p>
+          </div>
+        </figure>
+      </div>
+      <div class="txt-psy">
+        <h4>Our Psichology</h4>
+        <h1>Our Clinic Expert Psychologist from New York.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do mod <br> tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad inim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          exa <br> commodo consequauis aute irure dolor.
+        </p> <br> <br>
+        <a href="#">OUR ABOUT US</a>
+      </div>
+
+    </div>
+  </section>
+
+  <br>
+
+  <section class="section-gallery">
+    <div class="txt-service">
+      <h4>Our Services Showcase</h4>
+      <h1>Medical Psychology Services Showcase</h1>
+    </div>
+    <div class="gallery">
+      <div id="gallery">
+        <div class="row">
+          <article class="card-gall">
+            <a href="img/light1.jpg">
+              <figure class="img-gallery">
+                <img src="img/light1.jpg" alt="">
+                <div class="card-gall-hover">
+                  <h2>Miranda Halim Family</h2>
+                  <p>// COUNSALING</p>
+                </div>
+              </figure>
+            </a>
+          </article>
+          <article class="card-gall">
+            <a href="img/light2.jpg">
+              <figure class="img-gallery">
+                <img src="img/light2.jpg" alt="">
+                <div class="card-gall-hover">
+                  <h2>Miranda Halim Family</h2>
+                  <p>// COUNSALING</p>
+                </div>
+              </figure>
+            </a>
+          </article>
+          <article class="card-gall">
+            <a href="img/light3.jpg">
+              <figure class="img-gallery">
+                <img src="img/light3.jpg" alt="">
+                <div class="card-gall-hover">
+                  <h2>Miranda Halim Family</h2>
+                  <p>// COUNSALING</p>
+                </div>
+              </figure>
+            </a>
+          </article>
+        </div>
+        <div class="row">
+          <article class="card-gall">
+            <a href="img/light4.jpg">
+              <figure class="img-gallery">
+                <img src="img/light4.jpg" alt="">
+                <div class="card-gall-hover">
+                  <h2>Miranda Halim Family</h2>
+                  <p>// COUNSALING</p>
+                </div>
+              </figure>
+            </a>
+          </article>
+          <article class="card-gall">
+            <a href="img/light5.jpg">
+              <figure class="img-gallery">
+                <img src="img/light5.jpg" alt="">
+                <div class="card-gall-hover">
+                  <h2>Miranda Halim Family</h2>
+                  <p>// COUNSALING</p>
+                </div>
+              </figure>
+            </a>
+          </article>
+          <article class="card-gall">
+            <a href="img/light6.jpg">
+              <figure class="img-gallery">
+                <img src="img/light6.jpg" alt="">
+                <div class="card-gall-hover">
+                  <h2>Miranda Halim Family</h2>
+                  <p>// COUNSALING</p>
+                </div>
+              </figure>
+            </a>
+          </article>
+        </div>
+        <div class="row">
+          <article class="card-gall">
+            <a href="img/light7.jpg">
+              <figure class="img-gallery">
+                <img src="img/light7.jpg" alt="">
+                <div class="card-gall-hover">
+                  <h2>Miranda Halim Family</h2>
+                  <p>// COUNSALING</p>
+                </div>
+              </figure>
+            </a>
+          </article>
+          <article class="card-gall">
+            <a href="img/light8.jpg">
+              <figure class="img-gallery">
+                <img src="img/light8.jpg" alt="">
+                <div class="card-gall-hover">
+                  <h2>Miranda Halim Family</h2>
+                  <p>// COUNSALING</p>
+                </div>
+              </figure>
+            </a>
+          </article>
+          <article class="card-gall">
+            <a href="img/light9.jpg">
+              <figure class="img-gallery">
+                <img src="img/light9.jpg" alt="">
+                <div class="card-gall-hover">
+                  <h2>Miranda Halim Family</h2>
+                  <p>// COUNSALING</p>
+                </div>
+              </figure>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="section-video">
+    <div class="video">
+      <div class="txt-video">
+        <h4>Our Psychological Services</h4>
+        <h1>Our Clinic Expert Psychologist from New York.</h1>
+      </div>
+      <div class="container-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hZBUWKBTjdY?si=KIx_2oMUFPW6RfJs"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <br>
+    <div class="light-c ancho">
+      <article>
+        <a href="img/light1.jpg" data-lightbox="roadtrip">
+          <figure>
+            <img src="img/light1.jpg" alt="">
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a href="img/light2.jpg" data-lightbox="roadtrip">
+          <figure>
+            <img src="img/light2.jpg" alt="">
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a href="img/light3.jpg" data-lightbox="roadtrip">
+          <figure>
+            <img src="img/light3.jpg" alt="">
+          </figure>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="parallax">
+    <div class="filtro-para">
+      <div class="para ancho">
+        <p>300 <br> <span>Our Happy Client</span></p>
+        <p>100 <br> <span>Cases of success</span></p>
+        <p>50 <br> <span>Our Specialist</span></p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-team">
+    <div class="team ancho">
+      <br />
+      <div class="txt-service">
+        <h4>Our Member</h4>
+        <h1>Our Medical Psychology Member</span></h1>
+      </div>
+      <br>
+      <div class="cards-team">
+        <article class="card-team wow animate__animated animate__bounceInLeft">
+          <figure>
+            <img src="img/team2.jpg" alt="" />
+            <div class="card-team-hover">
+              <h2>Kutubul Alam Putu</h2>
+              <p>CEO & Funder</p>
+              <div class="icons-social">
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article class="card-team wow animate__animated animate__bounceInRight">
+          <figure>
+            <img src="img/team1.jpg" alt="" />
+            <div class="card-team-hover">
+              <h2>Arnika Alex</h2>
+              <p>Psychology</p>
+              <div class="icons-social">
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article class="card-team wow animate__animated animate__bounceInLeft">
+          <figure>
+            <img src="img/team3.jpg" alt="" />
+            <div class="card-team-hover">
+              <h2>Helan Griffin</h2>
+              <p>Therapists</p>
+              <div class="icons-social">
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </figure>
+        </article>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <section class="section-carousel">
+
+    <div class="txt-service">
+      <h4>Our Service</h4>
+      <h1 id="serv-wh">Professional Therapy Services <br>
+        You can Choose From</h1>
+    </div>
+    <div id="carousel" class="imgs">
+      <div id="slide-container">
+        <div class="slide" data-slideIndex="0">
+          <figure>
+            <img src="img/service-img.jpg" alt="">
+          </figure>
+          <div class="card-text">
+            <h2>Relationship Issues</h2>
+            <p>If you are going to use a ssage have suffered aration. risue is adpis viera bibe</p>
+            <a href="#">+ READ MORE</a>
+          </div>
+        </div>
+        <div class="slide" data-slideIndex="1">
+          <figure>
+            <img src="img/service-img2.jpg" alt="">
+          </figure>
+          <div class="card-text">
+            <h2>Anger Management</h2>
+            <p>If you are going to use a ssage have suffered aration. risue is adpis viera bibe</p>
+            <a href="#">+ READ MORE</a>
+          </div>
+        </div>
+
+        <div class="slide" data-slideIndex="2">
+          <figure>
+            <img src="img/service-img.jpg" alt="">
+          </figure>
+          <div class="card-text">
+            <h2>Therapytest Issues</h2>
+            <p>If you are going to use a ssage have suffered aration. risue is adpis viera bibe</p>
+            <a href="#">+ READ MORE</a>
+          </div>
+        </div>
+
+        <div class="slide" data-slideIndex="3">
+          <figure>
+            <img src="img/service-img3.jpg" alt="">
+          </figure>
+          <div class="card-text">
+            <h2>Relationship Issues</h2>
+            <p>If you are going to use a ssage have suffered aration. risue is adpis viera bibe</p>
+            <a href="#">+ READ MORE</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="slide-buttons">
+      <div id="back-button">
+      </div>
+      <div id="forward-button">
+      </div>
+    </div>
+
+
+    <div class="slide-indicators">
+      <a class="slide-indicator" data-slideTo="0"></a>
+      <a class="slide-indicator" data-slideTo="1"></a>
+      <a class="slide-indicator" data-slideTo="2"></a>
+      <a id="sl-indi" class="slide-indicator" data-slideTo="3"></a>
+    </div>
+
+  </section>
+
+  <br><br><br>
+
+
+
+
+  <section class="section-contanct">
+    <br>
+    <div class="contact ancho">
+      <div class="form-service">
+        <h4>Our Psichology</h4>
+        <h1>Get in Touch</h1>
+
+        <form onsubmit="return validateForm()">
+          <label for="name"></label>
+          <input placeholder="Name*" type="text" id="name" name="name" required>
+
+          <label for="email"></label>
+          <input placeholder="Email*" type="email" id="email" name="email" required> <br>
+
+          <label for="phone"></label>
+          <input placeholder="Phone*"  type="tel" id="phone" name="phone" required>
+
+          <label for="subject"></label>
+          <input placeholder="Subject*" type="text" id="subject" name="subject" required> <br>
+
+          <label for="message"></label>
+          <textarea placeholder="Text message*" id="message" name="message" rows="4" required></textarea> <br><br>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+      </div>
+
+      <figure>
+
+      </figure>
+
+    </div>
+  </section>
+
+  <br><br><br>
+
+  <!-- footer -->
+
+  <footer class="section-footer">
+    <div class="footer ancho">
+      <div class="f-clogo">
+        <figure class="logo">
+          <img src="img/logo3.png" alt="" />
+        </figure>
+        <p>Round whitefish flat loach potted <br> killifish ronquil. Long-finned pike <br> escolar northern pike escolar
+          nor <br>
+          thern squawfish eel.</p>
+        <div class="icons-fsocial">
+          <a><i class="fa-brands fa-facebook"></i></a>
+          <a><i class="fa-brands fa-twitter"></i></a>
+          <a><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="f-cquick">
+        <h2>Quick Links</h2>
+        <ul class="f-menu">
+          <li>
+            <a href="#">– Customers Services</a>
+          </li>
+          <li>
+            <a href="#">– Department Doctor</a>
+          </li>
+          <li>
+            <a href="#">– About Our Company</a>
+          </li>
+          <li>
+            <a href="#">– Medical Service</a>
+          </li>
+          <li>
+            <a href="#">– Make An Appointment</a>
+          </li>
+        </ul>
+      </div>
+      <div class="f-cwork">
+        <h2>Working Hours</h2>
+        <div class="horario">
+          <span>Tuesday - Friday</span>
+          <span>08:00 - 20:00</span>
+        </div>
+        <div class="horario">
+          <span>Saturday</span>
+          <span>09:00 - 18:00</span>
+        </div>
+        <div class="horario">
+          <span>Sunday</span>
+          <span>09:00 - 18:00</span>
+        </div>
+        <div class="horario">
+          <span>Monday</span>
+          <span>09:00 - 18:00</span>
+        </div>
+      </div>
+    </div>
+    <hr class="f-hr ancho">
+    <h3 class="f-copy">Copyright © poket all rights reserved.</h3>
+  </footer>
+
+
+
+
+  <div class="flotador">
+    <a href="#home"><i class="fa-solid fa-chevron-up"></i></i></a>
+  </div>
+
+  <script src="js/index.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/carrousel.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    var fondo = document.getElementById('modal')
+    $('.button').click(function () {
+      fondo.style.display = 'block'
+    })
+    $('#cerrarbtn').click(function () {
+      fondo.style.display = 'none'
+    })
+  </script>
+  <script>
+    new WOW().init();
+    Fancybox.bind("#gallery a", {
+      groupAll: true,
+    });
+  </script>
+  <script>
+    $("#inf").slideToggle();
+    $("#tit1").click(function () {
+      $("#inf").slideToggle();
+      // cambiar icono
+      if ($("#ico1").hasClass("fa-plus-square")) {
+        $("#tit1 h2").addClass("azul");
+        $("#ico1").removeClass("fa-plus-square");
+        $("#ico1").addClass("fa-minus-square");
+      } else {
+        $("#ico1").removeClass("fa-minus-square");
+        $("#ico1").addClass("fa-plus-square");
+        $("#tit1 h2").removeClass("azul");
+      }
+    });
+    $("#inf2").slideToggle();
+    $("#tit2").click(function () {
+      $("#inf2").slideToggle();
+      // cambiar icono
+      if ($("#ico2").hasClass("fa-plus-square")) {
+        $("#tit2 h2").addClass("azul");
+        $("#ico2").removeClass("fa-plus-square");
+        $("#ico2").addClass("fa-minus-square");
+      } else {
+        $("#ico2").removeClass("fa-minus-square");
+        $("#ico2").addClass("fa-plus-square");
+        $("#tit2 h2").removeClass("azul");
+      }
+    });
+    $("#inf3").slideToggle();
+    $("#tit3").click(function () {
+      $("#inf3").slideToggle();
+      // cambiar icono
+      if ($("#ico3").hasClass("fa-plus-square")) {
+        $("#tit3 h2").addClass("azul");
+        $("#ico3").removeClass("fa-plus-square");
+        $("#ico3").addClass("fa-minus-square");
+      } else {
+        $("#ico3").removeClass("fa-minus-square");
+        $("#ico3").addClass("fa-plus-square");
+        $("#tit3 h2").removeClass("azul");
+      }
+    });
+    $("#inf4").slideToggle();
+    $("#tit4").click(function () {
+      $("#inf4").slideToggle();
+      // cambiar icono
+      if ($("#ico4").hasClass("fa-plus-square")) {
+        $("#tit4 h2").addClass("azul");
+        $("#ico4").removeClass("fa-plus-square");
+        $("#ico4").addClass("fa-minus-square");
+      } else {
+        $("#ico4").removeClass("fa-minus-square");
+        $("#ico4").addClass("fa-plus-square");
+        $("#tit4 h2").removeClass("azul");
+      }
+    });
+  </script>
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value;
+  
+      if (!hasTwoWords(name)) {
+        alert('Please enter a valid full name (at least two words).');
+        return false;
+      }
+  
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return false;
+      }
+  
+      if (phone.length < 10) {
+        alert('Please enter a valid phone number (at least 10 characters).');
+        return false;
+      }
+  
+      if (subject.length < 10) {
+        alert('Please enter a valid subject (at least 10 characters).');
+        return false;
+      }
+  
+      if (message.length < 10) {
+        alert('Please enter a valid message (at least 10 characters).');
+        return false;
+      }
+  
+      // Si todas las validaciones son exitosas, el formulario se enviará
+      return true;
+    }
+  
+    function hasTwoWords(name) {
+      // Verifica si el nombre tiene al menos dos palabras
+      const words = name.split(' ');
+      return words.length >= 2;
+    }
+  </script>
+</body>
+
+</html>
