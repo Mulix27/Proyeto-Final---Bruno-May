@@ -14,7 +14,6 @@
 .contenidomodal {
   background-color: #c94d2f;
   margin: auto;
-  padding: 20px 30px;
   border: 1px solid #888;
   width: 500px;
   position: relative;
@@ -59,6 +58,12 @@
   margin-bottom: 40px;
 }
 
+.light-logo{
+  width: 180px;
+  margin-bottom: 40px;
+
+}
+
 .promociones h2 {
   font-size: 30px;
   color: var(--gris2);
@@ -66,7 +71,7 @@
 
 .promociones p {
   color: white;
-  margin: 20px 0;
+  margin: 10px 0;
   color: white;
   line-height: 24px;
   text-align: center;
