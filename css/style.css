@@ -610,6 +610,7 @@ figure img {
   background-color: white;
   margin-bottom: 5px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .card-team .card-team-hover i {
@@ -1076,6 +1077,7 @@ figure img {
   background: gray;
   padding: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .f-cquick h2 {
@@ -1262,6 +1264,13 @@ figure img {
   background: none;
   border: 1px solid var(--orange);
   padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.pys-icons a:hover {
+  background-color: var(--orange);
+  color: white;
 }
 
 .light-c {
